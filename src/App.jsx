@@ -16,7 +16,7 @@ function App() {
     <div>
       <NavBar />
 
-      <div className=' d-grid d-inline-grid'>
+      <div style={{height:'100vh'}} className=' d-grid d-inline-grid'>
         <HomePage />
       </div>
 
