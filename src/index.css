@@ -55,6 +55,76 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.site-footer {
+  background-color: #0e0e0e;
+  color: #8996a0;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  position: relative;
+  z-index: 2;
+}
+
+.l-container {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.site-footer__row--navigation {
+  justify-content: center;
+}
+
+.site-footer__row--navigation {
+  margin: 0 auto;
+  max-width: 848px;
+  width: 100%;
+}
+
+.site-footer__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer__row {
+  flex-direction: row;
+}
+
+
+.site-footer__menu-col {
+  padding-bottom: 48px;
+  width: 33.33%;
+}
+.site-footer__menu-heading {
+  color: #f3f4f4;
+  font-family: GT America Standard Bold;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.site-footer__nav {
+
+}
+
+.site-footer__copyright, .site-footer__copyright--below-logo {
+  font-size: 16px;
+  justify-content: flex-start;
+  order: 1;
+  width: 33.33%;
+}
+
+.site-footer__social {
+  justify-content: flex-end;
+  order: 3;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 33.33%;
+}
+
+.social-follow__list {
+  display: flex
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -1,42 +1,27 @@
 import React from 'react'
-import reactLogo from '../../assets/react.svg'
+import harvardLogo from '../../assets/harvard.svg'
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-dark py-4">
-            <div className="container-fluid">
-                <reactLogo/>
-                <a className="navbar-brand text-white" href="#">Navbar</a>
-                <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon "></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form className="d-flex" role="search">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-primary" type="submit">Search</button>
-                    </form>
+        <nav className="navbar navbar-expand-lg bg-dark bg-light ">
+            <div className="container-fluid justify-content-between text-black">
+
+                <img src={harvardLogo} alt="React Logo" width="190" height="48" />
+
+                {/* Two cards styled using Bootstrap's card classes */}
+                <div className="d-flex gap-4">
+                    <div className="card" style={{ width: '150px' }}>
+                        <div className="card-body bg-white text-white">
+                            <h5 className="card-title">Card A</h5>
+                            <p className="card-text">Content for card A</p>
+                        </div>
+                    </div>
+                    <div className="card" style={{ width: '150px' }}>
+                        <div className="card-body bg-white text-white">
+                            <h5 className="card-title">Card B</h5>
+                            <p className="card-text">Content for card B</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
